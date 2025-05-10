@@ -1,0 +1,242 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}   
+
+a{
+    text-decoration: none; 
+}
+
+header{
+    justify-content: space-between;
+    align-content: center;
+    background-color: #192d57;
+    position:fixed;
+    z-index:2;
+    top:0;
+    width:100%;
+    padding:1rem;
+   }
+
+header img{
+    float: left;
+    min-width:5rem;
+    max-width:10rem;
+    
+}
+header a{
+    font-size: 1rem;
+    color:#fff;
+    text-decoration: none;
+}
+.toggle-nav{
+    background-color:#192d57;
+    position:fixed;
+    width:100%;
+    top:6.25rem;
+}
+.toggle-nav a:hover{
+    background-color: #517492;
+}
+.toggle-nav a{
+    display:block;
+    color:#fff;
+    text-align:center;
+    text-decoration:none;
+    padding:2rem;
+    text-align: left;
+}
+.toggle-nav.show{
+    left:70%;
+}
+.toggle-nav{
+    left:100%;
+    transition-property:left;
+    transition-duration:.5s;
+    transition-timing-function:ease-in-out;
+}
+
+.hamburger{
+    float:right;
+    width:3rem;
+    padding:1rem;
+    margin: 0 2rem 0 0 ;
+    background-color: #fff;
+    border-radius: 1em;
+    }
+
+    .hamburger hr{
+    border-radius: 1.5em;
+    margin:.25rem 0;
+    border: .25rem solid #517492;
+    }
+
+    .overlay{
+    width: 100%;
+    height: 100%;
+    top:1rem;
+    position:fixed;
+    background-color:#192d57;
+    transition-property:left;
+    transition-duration:.5s;
+    transition-timing-function:ease-in-out;
+    left:100%;
+    }
+    .overlay.show{
+    left:0;
+    }
+
+body{
+    background-color:#b6cadb;
+    margin-top:10rem;
+}
+main{
+    margin:0 0 12rem 0;
+}
+
+.logo img{
+    max-width:40rem;
+}
+
+.logo{
+    justify-self:center;
+}
+
+.welcome{
+    margin-bottom: 5rem;
+}
+.welcome-text{
+    text-align: center;
+    padding:0 0 6rem;
+    display: flex;
+    flex-direction: column;
+}
+.welcome-text h1{
+    display:inline;
+    padding:1rem 1.5rem;
+    margin: 2rem 15rem 1.5rem;
+    border-radius: 1em;
+    font-size:3rem;
+    background-color:#fff;
+}
+.welcome-text h2{
+    display:inline;
+    border-radius: 1em;
+    font-size:2rem;
+    padding:1rem;
+    margin:0 30rem;
+    border-radius: 2em;
+    background-color:#fff;
+}
+.welcome-buttons{
+    text-align: center;
+    padding:0rem;
+}
+.welcome-buttons h2:hover{
+    background-color: #517492;
+}
+.welcome-buttons h2{
+    display:inline;
+    padding:.75rem 3rem;
+    border-radius: 2em;
+    font-size:2rem;
+    background-color:#192d57;
+    color:#fff;
+    margin: 0 4rem;
+}
+.adoption{
+    border: solid 2px #d30202;
+    float: left;
+    position:relative;
+    width:100vw;
+    max-width:100%;
+    height:80vh;
+    overflow:hidden;
+    background-color: #192d57;
+    padding: 1rem 0 0rem 0;
+    margin-bottom: 6rem;
+}
+.adoption h1 {
+    border: solid 2px #d30202;
+color: #fff;
+margin:2rem 0 0 8.25rem;
+font-size: 2rem;
+display: inline-flex;
+}
+
+.adoption h2{
+    border: solid 2px #d30202;
+    color: #fff;
+    margin:2rem 0 0 30rem;
+    font-size: 2rem;
+    display: inline-flex;
+}
+
+.adopttitle{
+    display: inline;
+}
+
+    .adoption img{
+        border: solid 2px #d30202;
+        float: left;
+        width:18rem;
+        margin:6rem 30vw 6rem 7rem;
+        border-radius: 13em;
+       }
+       
+   
+    .arrow{
+        border: solid 2px #d30202;
+    position:absolute;
+     font-size:4rem;
+     color:#fff;
+     cursor:pointer;
+     z-index:1;
+     top:50%;
+    }
+    .left{
+        border: solid 2px #d30202;
+        background-color: #192d57;
+     left:1rem;
+    }
+    .right{
+        border: solid 2px #d30202;
+        background-color: #192d57;
+     right:68rem;
+    }
+.hours{
+    margin: 2rem 5rem 6rem 0;
+    display: flex;
+    font-size: 1.25rem;
+    color: #192d57;
+    background-color: #fff;
+    border-radius: 2em;
+    padding:2rem 0 2rem 3rem ;
+}
+.hours h3{
+
+    font-style: oblique;
+    font-weight: 800;
+}
+.hours p{
+    padding-bottom: 1rem;
+}
+footer{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background-color: #192d57;
+padding:1.5rem 1rem;
+}
+footer img{
+    max-width: 4rem;
+    padding:0 1rem;
+}
+.footerlogo img{
+min-width: 10rem;
+float:right;
+}
+
