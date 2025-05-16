@@ -210,7 +210,7 @@ scrollbar-color:#E5CA9B #192d57;
 .menu h3{
     color: #192d57;
 }
-.menuitems span{
+.menuitems a{
 align-content: center;
 justify-items: center;
 background-color: #fff;
@@ -285,7 +285,7 @@ align-items:center;
     .menu img{
             max-width: 10rem;
         }
-        .menu span{
+        .menuitems a{
             display: flex;
             flex-direction: column;
             align-items: center;
