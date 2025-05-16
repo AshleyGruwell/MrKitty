@@ -17,6 +17,8 @@ function
   x[slideIndex-1].style.display = "block";
 }
 
+
+
 function toggleNav() {
     let elements = document.getElementsByClassName('toggle-nav');
     for(let i = 0; i < elements.length; i++){

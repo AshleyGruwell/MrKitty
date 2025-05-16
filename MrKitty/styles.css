@@ -5,11 +5,9 @@
     font-weight: 600;
     font-style: normal;
 }   
-
 a{
     text-decoration: none; 
 }
-
 header{
     justify-content: space-between;
     align-content: center;
@@ -20,12 +18,10 @@ header{
     width:100%;
     padding:1rem;
    }
-
 header img{
     float: left;
     min-width:5rem;
     max-width:10rem;
-    
 }
 header a{
     font-size: 1rem;
@@ -36,7 +32,7 @@ header a{
     background-color:#192d57;
     position:fixed;
     width:100%;
-    top:6.25rem;
+    top:5.45rem;
 }
 .toggle-nav a:hover{
     background-color: #517492;
@@ -58,22 +54,19 @@ header a{
     transition-duration:.5s;
     transition-timing-function:ease-in-out;
 }
-
 .hamburger{
     float:right;
-    width:3rem;
-    padding:1rem;
+    width:2rem;
+    padding:.5rem 1rem;
     margin: 0 2rem 0 0 ;
     background-color: #fff;
     border-radius: 1em;
     }
-
     .hamburger hr{
     border-radius: 1.5em;
     margin:.25rem 0;
     border: .25rem solid #517492;
     }
-
     .overlay{
     width: 100%;
     height: 100%;
@@ -88,23 +81,16 @@ header a{
     .overlay.show{
     left:0;
     }
-
 body{
     background-color:#b6cadb;
     margin-top:10rem;
 }
-main{
-    margin:0 0 12rem 0;
-}
-
 .logo img{
     max-width:40rem;
 }
-
 .logo{
     justify-self:center;
 }
-
 .welcome{
     margin-bottom: 5rem;
 }
@@ -119,19 +105,22 @@ main{
     padding:1rem 1.5rem;
     margin: 2rem 15rem 1.5rem;
     border-radius: 1em;
-    font-size:3rem;
+    font-size:2rem;
     background-color:#fff;
 }
 .welcome-text h2{
     display:inline;
     border-radius: 1em;
-    font-size:2rem;
-    padding:1rem;
-    margin:0 30rem;
+    font-size:1.75rem;
+    padding:1rem 1.5rem;
+    margin:0 20rem;
     border-radius: 2em;
     background-color:#fff;
 }
+
 .welcome-buttons{
+    display: flex;
+    flex-direction: row;
     text-align: center;
     padding:0rem;
 }
@@ -139,104 +128,295 @@ main{
     background-color: #517492;
 }
 .welcome-buttons h2{
-    display:inline;
+        align-items:center;
+        align-self: center;
     padding:.75rem 3rem;
     border-radius: 2em;
-    font-size:2rem;
+    font-size:1.5rem;
     background-color:#192d57;
     color:#fff;
-    margin: 0 4rem;
+    margin: 1rem 4rem;
 }
 .adoption{
-    border: solid 2px #d30202;
-    float: left;
-    position:relative;
     width:100vw;
     max-width:100%;
-    height:80vh;
-    overflow:hidden;
+    height:75vh;
+    overflow-x:scroll;
+    overflow-y: hidden;
     background-color: #192d57;
     padding: 1rem 0 0rem 0;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
+    scrollbar-color:#192d57 #517492 ;
 }
 .adoption h1 {
-    border: solid 2px #d30202;
+justify-self: center;
 color: #fff;
-margin:2rem 0 0 8.25rem;
+margin:0rem 0 0 1rem;
 font-size: 2rem;
-display: inline-flex;
 }
-
-.adoption h2{
-    border: solid 2px #d30202;
-    color: #fff;
-    margin:2rem 0 0 30rem;
-    font-size: 2rem;
-    display: inline-flex;
+.slide{
+       display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        
 }
-
-.adopttitle{
-    display: inline;
-}
-
     .adoption img{
-        border: solid 2px #d30202;
-        float: left;
         width:18rem;
-        margin:6rem 30vw 6rem 7rem;
+        margin:1rem 20vw 6rem 8rem;
         border-radius: 13em;
        }
-       
-   
+  
     .arrow{
-        border: solid 2px #d30202;
-    position:absolute;
      font-size:4rem;
      color:#fff;
      cursor:pointer;
      z-index:1;
-     top:50%;
     }
     .left{
-        border: solid 2px #d30202;
         background-color: #192d57;
      left:1rem;
     }
     .right{
-        border: solid 2px #d30202;
         background-color: #192d57;
-     right:68rem;
     }
 .hours{
-    margin: 2rem 5rem 6rem 0;
-    display: flex;
-    font-size: 1.25rem;
+    margin: 0 4rem 5rem 5rem;
+    text-align: right;
+    
+    display:flex;
+        flex-direction:column wrap;
+        justify-self: right;
+        justify-content:center;
+    font-size: 1rem;
     color: #192d57;
     background-color: #fff;
     border-radius: 2em;
-    padding:2rem 0 2rem 3rem ;
+    padding:1rem 2rem 2rem 20rem ;
+}
+.hours h2{
+    color: #192d57;
+    font-size: 2rem;
+    margin:0 0 1rem 0;
 }
 .hours h3{
-
     font-style: oblique;
     font-weight: 800;
 }
 .hours p{
     padding-bottom: 1rem;
+    
+}
+.hours li{
+   list-style-type: none; 
 }
 footer{
 display:flex;
 justify-content:space-between;
 align-items:center;
 background-color: #192d57;
-padding:1.5rem 1rem;
+padding:1rem;
 }
-footer img{
-    max-width: 4rem;
+.icons img{
+    min-width: 60px;
+    max-height: 60px;
     padding:0 1rem;
 }
 .footerlogo img{
-min-width: 10rem;
-float:right;
+max-width: 10rem;
 }
+.socials img{
+    display:inline-block;
+    max-width: 50px;
+    max-height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    padding:0 1rem;
+}
+.whoweare{
+    display:flex;
+    max-width:100%;
+    margin:auto;
+    align-items:start;
+}
+.whoweare img{
+vertical-align: top;
+max-width: 50vw;
+border-radius:0 15em 15em 0;
+background-color: #192d57;
+padding:3rem 3rem 3rem 0;
+}
+.whoweare h3, .whoweare h4{
+padding:.5rem 1rem;
+float: right;
 
+}
+.whoweare h3{
+    margin:0 1rem 1rem 0;
+    font-size: 2rem;
+    background-color: #fff;
+    border-radius: 2em;
+    text-align: center;
+    
+}
+.whoweare h4{
+    font-size: 1.5rem;
+    text-align: right;
+    margin-right: 1rem;
+}
+.whatwedo h3, .whatwedo h4{
+    padding:.5rem 1rem;
+    border:2px solid transparent;
+    float: left;
+}
+.whatwedo h3{
+    margin:6rem 0 1rem 1rem;
+    font-size: 2rem;
+    background-color: #fff;
+    border-radius: 2em;
+    text-align: center;
+}
+.whatwedo h4{
+    font-size: 1.5rem;
+    max-width:40vw;
+    margin:0 40vw 0 1rem;
+}
+.whatwedo{
+    margin-bottom: 10vh;
+}
+.cats{ 
+width:62rem;
+display:flex;
+margin-left: 10vw;
+overflow-x: scroll;
+scrollbar-color:#E5CA9B #192d57;
+}
+.cats div{
+   width: 100%;
+  display:grid;
+    grid-template-columns:auto auto auto;
+  grid-gap:8rem;
+  padding:1rem 0;
+  flex:none;
+  margin:0 3rem;
+}
+.cats div img{
+    width:10rem;
+    object-fit: cover;
+    padding:1rem;
+    background-color: #E5CA9B;
+    border: 6px solid #4B3413;
+    border-radius: 50%;
+}
+.catswrapper{
+    background-image: url(images/MrKittysCupSpill-15.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position:bottom;
+    padding-top: 50rem;
+}
+@media only screen and (max-width: 750px) {
+    .logo img{
+        max-width:25rem;}
+
+        .welcome-text {
+        display:flex;
+        justify-self: center;
+        align-items:center;
+        align-self: center;
+        text-align: center;
+        border-radius: 1em;
+        }
+
+        .welcome-text h2{
+            flex-direction: row;
+        }
+        .welcome-buttons{
+        display:flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items:center;
+        align-self: center;
+        font-size: 1rem;
+        }
+        .welcome-buttons a{
+            margin:1rem 0;
+        }
+        .footer{
+        display:flex;
+        flex-direction: column;
+        justify-content:space-between;
+        }
+        .icons img{
+            max-width:.25rem;
+            
+        }
+        .icons{ 
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        align-self: center;
+        
+        }.socials img{
+         max-width:.25rem;
+        }
+        .socials{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        align-self: center; 
+        }
+      
+        .adoption{
+        display:flex;
+        flex-direction:column wrap;
+        justify-items:space-between;
+        justify-content:start;
+        align-self: center;
+        height:70vh;
+        overflow-x:scroll
+        }
+        .adoption h1{
+        display:flex;
+        flex-direction:column;
+        justify-content:left;
+        margin:1rem 0rem 1rem 1rem;
+
+        }
+        .adoption img{
+            margin:1rem 20vw 6rem 2rem;
+            max-width:14rem;
+        }
+
+        .hours {
+        display:flex;
+        justify-self: right;
+        justify-content:space-between;
+        align-items:center;
+        align-self: center;
+        text-align: right;
+          margin: .5rem 2rem 1rem 0;
+          padding: 2rem 4rem;
+        }
+        .cats span{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            padding: 0 .75rem .5rem 1rem;
+        }
+        .cats{
+            width:28rem;
+            margin-left: 4vw;
+        }
+        .cats div img{
+            max-width: 5rem;
+            padding:.75rem;
+            border:3px solid #4B3413;
+        }
+        .whatwedo{
+        margin-bottom:0;
+        }
+    }
