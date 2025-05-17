@@ -82,7 +82,7 @@ header a{
     left:0;
     }
 
-    footer{
+footer{
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -328,5 +328,28 @@ align-items:center;
         }
         .contact img{
             max-width: 20rem;
+        }
+        .footer{
+        display:flex;
+        flex-direction: column;
+        justify-content:space-between;
+        }
+        .icons img{
+            max-width:.25rem;
+        }
+        .icons{ 
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;}
+        
+        .socials img{
+         max-width:.25rem;
+        }
+        .socials{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
         }
 }

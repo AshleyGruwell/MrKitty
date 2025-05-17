@@ -350,16 +350,14 @@ scrollbar-color:#E5CA9B #192d57;
         }
         .icons img{
             max-width:.25rem;
-            
         }
         .icons{ 
         display:flex;
         flex-direction:row;
         justify-content:space-between;
-        align-items:center;
-        align-self: center;
+        align-items:center;}
         
-        }.socials img{
+        .socials img{
          max-width:.25rem;
         }
         .socials{
@@ -367,7 +365,6 @@ scrollbar-color:#E5CA9B #192d57;
         flex-direction:row;
         justify-content:space-between;
         align-items:center;
-        align-self: center; 
         }
       
         .adoption{
